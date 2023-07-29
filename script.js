@@ -77,9 +77,13 @@ function checkAndAppend() {
     }
 }
 
+function strShuffle() {
+    password = password.split('').sort(function () { return 0.5 - Math.random() }).join('');
+}
 
 function generateFunc() {
     checkAndAppend();
+    strShuffle();
     input_area.value = password;
     password = "";
 }
