@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 20px 20px 20px 40px;
+    max-width: 30%;
+    margin: 5% auto 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+    background-color: rgb(224, 250, 224);
+}
+
+#title {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#input_copy_container {
+    max-width: 100%;
+    outline: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+#input_area {
+    float: left;
+    margin: 0;
+    border: none;
+    height: 30px;
+    width: 85%;
+    color: #333;
+    font-size: larger;
+    background-color: rgb(224, 250, 224);
+}
+
+#input_area:focus {
+    outline: none;
+}
+
+img {
+    border: none;
+    background-color: white;
+    margin: auto 0;
+}
+
+
+
+.label_container {
+    margin-top: 30px;
+}
+
+div {
+    padding: 5px;
+}
+
+.label_div:hover {
+    transform: scale(1.03, 1.03);
+    transition: 150ms;
+}
+
+#generate {
+    margin-top: 50px;
+    max-width: 25%;
+    height: 25px;
+    align-self: center;
+    font-weight: 550;
+    color: #333;
+    background-color: rgb(162, 249, 31);
+    border: 1px solid green;
+    /* border-radius: 5px; */
+}
+
+#generate:hover {
+    transform: scale(0.9, 0.9);
+    transition: 100ms;
+}
+
+#copy {
+    float: right;
+    font-size: 10px;
+    padding: 2px;
+    font-weight: bolder;
+    align-self: flex-end;
+    margin: 0px 0px 0 0;
+    background: none;
+    background-color: white;
+    border: 1px solid lightgray;
+
+}
+
+#copy:hover {
+    transform: scale(0.9, 0.9);
+    transition: 100ms;
+}
+
+input {
+    float: right;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    #container {
+        padding: 10px;
+        max-width: 90%;
+        margin: 5% auto 0;
+    }
+
+    #input_area {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #input_area {
+        width: 92%;
+    }
+}

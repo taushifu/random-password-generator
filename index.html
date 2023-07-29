@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="title">
+            <h3>Password Generator</h3>
+        </div>
+
+        <div id="input_copy_container">
+            <input type="text" id="input_area" readonly />
+            <img src="images/copyIcon.png" id="copy" onclick="copyIt()" />
+        </div>
+
+
+        <div class="label_container">
+            <div class="label_div">
+                <label for="length">Enter the length of password.</label>
+                <input type="number" id="length" name="length" min="1" />
+            </div>
+
+            <div class="label_div">
+                <label for="upper">Do you want to add uppercase letters?</label>
+                <input type="checkbox" id="upper" name="upper" />
+            </div>
+
+            <div class="label_div">
+                <label for="lower">Do you want to add lowercase letters?</label>
+                <input type="checkbox" name="lower" id="lower" />
+            </div>
+
+            <div class="label_div">
+                <label for="number">Do you want to add numbers?</label>
+                <input type="checkbox" id="number" name="number" />
+            </div>
+
+            <div class="label_div">
+                <label for="symbol">Do you want to add special characters?</label>
+                <input type="checkbox" id="symbol" name="symbol" />
+            </div>
+
+        </div>
+
+        <button id="generate" onclick="generateFunc()">Generate</button>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
